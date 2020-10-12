@@ -99,7 +99,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <wsutil/file_util.h>
 #include <cli_main.h>
 #include <version_info.h>
 #include <wsutil/inet_addr.h>
@@ -107,6 +106,7 @@
 #ifdef _WIN32
 #include <io.h>     /* for _setmode */
 #include <fcntl.h>  /* for O_BINARY */
+#include <winsock2.h>
 #endif
 
 #include <time.h>
@@ -1857,15 +1857,6 @@ int
 main(int argc, char *argv[])
 {
     int ret = EXIT_SUCCESS;
-
-#ifdef _WIN32
-    create_app_running_mutex();
-#endif /* _WIN32 */
-
-    if (parse_options(argc, argv) != EXIT_SUCCESS) {
-        ret = EXIT_FAILURE;
-        goto clean_exit;
-    }
 
     assert(input_file  != NULL);
     assert(output_file != NULL);
