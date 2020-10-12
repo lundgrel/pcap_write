@@ -64,7 +64,7 @@
  * set to WTAP_MAX_PACKET_SIZE_STANDARD.
  */
 
-#include <config.h>
+// #include <config.h>
 
 /*
  * Just make sure we include the prototype for strptime as well

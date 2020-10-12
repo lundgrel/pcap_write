@@ -184,7 +184,8 @@
  *
  * Either can be used for exported *function* declarations and definitions.
  */
-#define WS_DLL_PUBLIC  WS_DLL_PUBLIC_DEF extern
+//#define WS_DLL_PUBLIC  WS_DLL_PUBLIC_DEF extern
+#define WS_DLL_PUBLIC  
 
 #endif /* SYMBOL_EXPORT_H */
 

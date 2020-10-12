@@ -7,7 +7,7 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#include <config.h>
+// #include <config.h>
 
 #include <stdio.h>
 #include <stdlib.h> /* for exit() */
@@ -4582,14 +4582,6 @@ main(int argc, char *argv[])
 #ifdef _WIN32
     create_app_running_mutex();
 
-    /*
-     * Initialize our DLL search path. MUST be called before LoadLibrary
-     * or g_module_open.
-     */
-    ws_init_dll_search_path();
-
-    /* Load wpcap if possible. Do this before collecting the run-time version information */
-    load_wpcap();
 #endif
 
     /* Initialize the version information. */

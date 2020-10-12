@@ -8,7 +8,7 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#include <config.h>
+// #include <config.h>
 
 #ifdef HAVE_SYS_WAIT_H
 # include <sys/wait.h>

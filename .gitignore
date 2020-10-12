@@ -170,3 +170,32 @@ packaging/portableapps/appinfo.ini
 vgcore.*
 .pytest_cache/
 test/*.log
+
+# Ignore all VisualStudio output
+# https://stackoverflow.com/a/35175552/25961
+*/**/bin/Debug
+*/**/bin/Release
+*/**/obj/Debug
+*/**/obj/Release
+*/**/obj/x86
+*/**/obj/x64
+*/**/bin/x86
+*/**/bin/x64
+*/**/obj
+*/**/.vs
+*/**/*.v12.suo
+*.pdf
+*/**/packages
+*.ncb
+*.suo
+.vs/
+**/build/**/*.vcproj.*.user
+**/build/**/*.vcxproj.*.user
+**/build/*.vcproj.*.user
+**/build/*.vcxproj.*.user
+UpgradeLog.htm
+# VS 2015 stuff
+*.pdb
+*.db
+*.opendb
+/Debug

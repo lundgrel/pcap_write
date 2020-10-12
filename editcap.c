@@ -15,7 +15,7 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#include <config.h>
+//// #include <config.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -34,7 +34,7 @@
 #endif
 
 #include <time.h>
-#include <glib.h>
+//#include <glib.h>
 
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>
@@ -44,11 +44,11 @@
 #include <getopt.h>
 #endif
 
-#include <wiretap/secrets-types.h>
-#include <wiretap/wtap.h>
-
-#include "epan/etypes.h"
-#include "epan/dissectors/packet-ieee80211-radiotap-defs.h"
+//#include "wiretap/secrets-types.h"
+//#include "wiretap/wtap.h"
+//
+//#include "epan/etypes.h"
+//#include "epan/dissectors/packet-ieee80211-radiotap-defs.h"
 
 #ifndef HAVE_GETOPT_LONG
 #include "wsutil/wsgetopt.h"
@@ -63,22 +63,22 @@
 # include "wsutil/strptime.h"
 #endif
 
-#include <ui/clopts_common.h>
-#include <ui/cmdarg_err.h>
-#include <wsutil/filesystem.h>
-#include <wsutil/file_util.h>
-#include <wsutil/wsgcrypt.h>
-#include <wsutil/plugins.h>
-#include <wsutil/privileges.h>
-#include <wsutil/report_message.h>
-#include <wsutil/strnatcmp.h>
-#include <wsutil/str_util.h>
-#include <cli_main.h>
-#include <version_info.h>
-#include <wsutil/pint.h>
-#include <wsutil/strtoi.h>
-#include <wiretap/wtap_opttypes.h>
-#include <wiretap/pcapng.h>
+//#include "ui/clopts_common.h"
+//#include "ui/cmdarg_err.h"
+#include "wsutil/filesystem.h"
+#include "wsutil/file_util.h"
+#include "wsutil/wsgcrypt.h"
+#include "wsutil/plugins.h"
+#include "wsutil/privileges.h"
+#include "wsutil/report_message.h"
+#include "wsutil/strnatcmp.h"
+#include "wsutil/str_util.h"
+#include "cli_main.h"
+#include "version_info.h"
+#include "wsutil/pint.h"
+#include "wsutil/strtoi.h"
+#include "wiretap/wtap_opttypes.h"
+#include "wiretap/pcapng.h"
 
 #include "ui/failure_message.h"
 

@@ -14,7 +14,7 @@
 #include <glib.h>
 #include <string.h>
 
-#include <config.h>
+// #include <config.h>
 #include "ui/iface_toolbar.h"
 
 typedef enum {
